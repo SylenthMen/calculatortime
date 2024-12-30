@@ -142,3 +142,9 @@ button:active {
     color: #2196f3;
     /* border: 1px solid #ddd; */
 }
+
+#resultado p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #2196f3;
+}

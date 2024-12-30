@@ -38,6 +38,7 @@ document.querySelectorAll('input[type="number"]').forEach((input) => {
   });
 });
 
+// Función para calcular el tiempo transcurrido
 function calcularTiempo() {
   const horaInicio = document.getElementById("horaInicio").value;
   const minutoInicio = document.getElementById("minutoInicio").value;
