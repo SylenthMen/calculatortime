@@ -48,7 +48,7 @@ function calcularTiempo() {
     return;
   }
 
-  // Obtener la hora actual del dispositivo
+  // Obtener la hora actual al presionar el botón
   const ahora = new Date();
   const horaFin = ahora.getHours();
   const minutoFin = ahora.getMinutes();
@@ -75,7 +75,10 @@ function calcularTiempo() {
   const horas = Math.floor(diferencia / 60);
   const minutos = Math.floor(diferencia % 60);
 
-  // Mostrar el resultado
+  // Mostrar el resultado incluyendo la hora actual
   const resultado = document.getElementById("resultado");
-  resultado.innerHTML = `Tiempo transcurrido: ${horas} horas y ${minutos} minutos`;
+  resultado.innerHTML = `
+    Hora actual: ${horaFin.toString().padStart(2, "0")}:${minutoFin.toString().padStart(2, "0")}<br>
+    Tiempo transcurrido: ${horas} horas y ${minutos} minutos
+  `;
 }
